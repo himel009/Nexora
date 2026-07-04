@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PathPilot — Plot Your Path From Student to Professional</title>
+<meta name="description" content="PathPilot is a student consultancy connecting university students with verified mentors for research networking, career development, and professional presence — starting at Daffodil International University." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1"/>
+          <path d="M16 4 L16 28 M4 16 L28 16" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>
+          <path d="M16 7 L23 22 L16 18.5 L9 22 Z" fill="currentColor"/>
+        </svg>
+      </span>
+      PathPilot
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#experts">For Experts</a>
+      <a href="#trajectory">Our Trajectory</a>
+      <a href="#waitlist" class="nav__cta">Join the Waitlist</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">STUDENT CONSULTANCY &mdash; PHASE 01</p>
+        <h1 class="hero__title">
+          Every career has a<br>
+          flight path. <em>We help<br>
+          you plot yours.</em>
+        </h1>
+        <p class="hero__sub">
+          PathPilot connects university students with verified mentors and
+          real services &mdash; research networking, career consultation,
+          professional documents, and more. No shortcuts. No fake
+          credentials. Just a clear route forward.
+        </p>
+        <div class="hero__actions">
+          <a href="#waitlist" class="btn btn--primary">
+            <span>Join the Waitlist</span>
+          </a>
+          <a href="#how" class="btn btn--ghost">
+            <span>See how it works</span>
+          </a>
+        </div>
+        <p class="hero__badge">Now launching at Daffodil International University</p>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <svg class="flightpath" id="flightpath" viewBox="0 0 480 520" fill="none">
+          <path id="fpLine" class="fp-line"
+            d="M 60 460 C 60 380, 160 380, 170 320 C 180 250, 90 230, 100 170 C 108 118, 220 120, 240 60"
+            stroke="url(#fpGrad)" stroke-width="2" stroke-linecap="round" fill="none" />
+          <defs>
+            <linearGradient id="fpGrad" x1="0" y1="520" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#C9A227" stop-opacity="0.35"/>
+              <stop offset="1" stop-color="#E8C468" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+
+          <g class="fp-point" style="--d:0s">
+            <circle cx="60" cy="460" r="5" class="fp-dot"/>
+            <text x="78" y="465" class="fp-label">Discover</text>
+          </g>
+          <g class="fp-point" style="--d:0.35s">
+            <circle cx="170" cy="320" r="5" class="fp-dot"/>
+            <text x="188" y="325" class="fp-label">Connect</text>
+          </g>
+          <g class="fp-point" style="--d:0.7s">
+            <circle cx="100" cy="170" r="5" class="fp-dot"/>
+            <text x="118" y="175" class="fp-label">Build</text>
+          </g>
+          <g class="fp-point" style="--d:1.05s">
+            <circle cx="240" cy="60" r="6" class="fp-dot fp-dot--final"/>
+            <text x="260" y="55" class="fp-label fp-label--final">Launch</text>
+          </g>
+
+          <g id="fpMarker" class="fp-marker">
+            <path d="M0 -6 L5 4 L0 1.5 L-5 4 Z" fill="#F3EFE4"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ STRIP ============ -->
+  <section class="strip reveal">
+    <p><span>Research Networking</span><span>Career Consultation</span><span>ATS Resumes</span><span>Portfolios</span><span>LinkedIn &amp; GitHub</span><span>ORCID &amp; Scholar</span><span>Workshops</span></p>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="section__head reveal">
+      <p class="eyebrow">SERVICES</p>
+      <h2>Everything between a lecture hall<br>and a career, in one place.</h2>
+      <p class="section__sub">PathPilot doesn't write your papers or fabricate your credentials. We connect you with verified people and structured services that build the real thing.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-cat reveal">
+        <h3>Research &amp; Academic Profile</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3 L12 21 M4 8 L20 8 M6 8 C6 14 8 18 12 21 C16 18 18 14 18 8" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Research networking &amp; collaborator matching</li>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M12 6 L12 12 L16 15" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>ORCID setup &amp; verification</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 6 L20 6 M4 12 L20 12 M4 18 L14 18" stroke="currentColor" stroke-width="1.4"/></svg>Google Scholar guidance</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3 L20 8 L20 16 L12 21 L4 16 L4 8 Z" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Research profile guidance</li>
+        </ul>
+      </div>
+
+      <div class="service-cat reveal">
+        <h3>Career Development</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M15 9 L11 13 L9 15 L11 11 L15 9" fill="currentColor"/></svg>1:1 career consultation</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 18 L9 10 L14 14 L20 5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M15 5 L20 5 L20 10" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>Career roadmap planning</li>
+          <li><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="1.5" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M9 8 V6 a1.5 1.5 0 0 1 1.5 -1.5 h3 A1.5 1.5 0 0 1 15 6 v2" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Internship guidance</li>
+        </ul>
+      </div>
+
+      <div class="service-cat reveal">
+        <h3>Professional Presence</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M8 9 L16 9 M8 13 L16 13 M8 17 L12 17" stroke="currentColor" stroke-width="1.2"/></svg>CV development</li>
+          <li><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="1.5" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M4 9 L20 9" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="7.5" r="0.6" fill="currentColor"/></svg>ATS-optimized resumes</li>
+          <li><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" stroke="currentColor" fill="none" stroke-width="1.4"/><rect x="13" y="4" width="7" height="7" stroke="currentColor" fill="none" stroke-width="1.4"/><rect x="4" y="13" width="7" height="7" stroke="currentColor" fill="none" stroke-width="1.4"/><rect x="13" y="13" width="7" height="7" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Portfolio creation</li>
+          <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M8 11 V17 M8 8 V8.2 M12 17 V13 a2 2 0 0 1 4 0 V17" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>LinkedIn optimization</li>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M12 8 a3 3 0 0 0 -1 5.8 c0 0.6 0 1.2 0 1.7 M9.5 15 h5" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>GitHub profile setup</li>
+        </ul>
+      </div>
+
+      <div class="service-cat reveal">
+        <h3>Community &amp; Growth</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3" stroke="currentColor" fill="none" stroke-width="1.4"/><circle cx="16" cy="9" r="3" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M3 19 c0 -3 2.5 -5 5 -5 s5 2 5 5 M11 19 c0 -3 2.5 -5 5 -5 s5 2 5 5" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Workshops &amp; training</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 20 L4 8 L12 4 L20 8 L20 20" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M9 20 V13 H15 V20" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Student community</li>
+          <li><svg viewBox="0 0 24 24"><path d="M6 3 H15 L19 7 V21 H6 Z" stroke="currentColor" fill="none" stroke-width="1.4"/><path d="M15 3 V7 H19" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>Professional document services</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section--how" id="how">
+    <div class="section__head reveal">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>Four legs. One route.</h2>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step reveal">
+        <span class="how-step__num">01</span>
+        <h3>Discover</h3>
+        <p>Tell us where you're headed. We map your goals against a clear roadmap &mdash; research, industry, or both.</p>
+      </div>
+      <div class="how-step reveal">
+        <span class="how-step__num">02</span>
+        <h3>Connect</h3>
+        <p>Get matched with verified mentors and consultants who've actually done what you're trying to do.</p>
+      </div>
+      <div class="how-step reveal">
+        <span class="how-step__num">03</span>
+        <h3>Build</h3>
+        <p>CV, portfolio, GitHub, LinkedIn, ORCID &mdash; the assets that get you noticed, built properly, not faked.</p>
+      </div>
+      <div class="how-step reveal">
+        <span class="how-step__num">04</span>
+        <h3>Launch</h3>
+        <p>Apply for internships, research collaborations, and roles with a profile that can withstand scrutiny.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOR EXPERTS ============ -->
+  <section class="section section--experts" id="experts">
+    <div class="experts__inner reveal">
+      <div class="experts__copy">
+        <p class="eyebrow">FOR MENTORS &amp; CONSULTANTS</p>
+        <h2>Bring your experience to the next generation.</h2>
+        <p>If you're a researcher, engineer, or industry professional, PathPilot gives you a verified channel to mentor students, run paid consultations, and host workshops &mdash; without the overhead of building your own platform.</p>
+        <a href="#waitlist" class="btn btn--outline"><span>Apply as a Mentor</span></a>
+      </div>
+      <div class="experts__panel" aria-hidden="true">
+        <div class="panel-row"><span>Verification</span><span class="tag">Required</span></div>
+        <div class="panel-row"><span>Payout model</span><span class="tag">Per session / package</span></div>
+        <div class="panel-row"><span>Commitment</span><span class="tag">Flexible</span></div>
+        <div class="panel-row"><span>Platform fee</span><span class="tag">Transparent commission</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAJECTORY ============ -->
+  <section class="section section--trajectory" id="trajectory">
+    <div class="section__head reveal">
+      <p class="eyebrow">OUR TRAJECTORY</p>
+      <h2>Built to expand, one runway at a time.</h2>
+    </div>
+
+    <div class="trajectory-track reveal">
+      <div class="traj-item traj-item--active">
+        <span class="traj-phase">Phase 01</span>
+        <span class="traj-name">Single University</span>
+        <span class="traj-status">In progress</span>
+      </div>
+      <div class="traj-item">
+        <span class="traj-phase">Phase 02</span>
+        <span class="traj-name">Multiple Universities</span>
+      </div>
+      <div class="traj-item">
+        <span class="traj-phase">Phase 03</span>
+        <span class="traj-name">National Student Platform</span>
+      </div>
+      <div class="traj-item">
+        <span class="traj-phase">Phase 04</span>
+        <span class="traj-name">Professional Consultancy Firm</span>
+      </div>
+      <div class="traj-item">
+        <span class="traj-phase">Phase 05</span>
+        <span class="traj-name">Technology Company</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WAITLIST ============ -->
+  <section class="section section--waitlist" id="waitlist">
+    <div class="waitlist__inner reveal">
+      <p class="eyebrow">GET EARLY ACCESS</p>
+      <h2>Be first through the gate.</h2>
+      <p class="section__sub">We're onboarding our first students and mentors at Daffodil International University. Join the waitlist to get early access.</p>
+
+      <form class="waitlist-form" id="waitlistForm" novalidate>
+        <div class="waitlist-form__row">
+          <input type="text" name="name" id="wlName" placeholder="Full name" required autocomplete="name" />
+          <input type="email" name="email" id="wlEmail" placeholder="Email address" required autocomplete="email" />
+        </div>
+        <div class="waitlist-form__row">
+          <select name="role" id="wlRole" required>
+            <option value="" disabled selected>I'm joining as a...</option>
+            <option value="student">Student</option>
+            <option value="mentor">Mentor / Consultant</option>
+            <option value="other">Something else</option>
+          </select>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Join the Waitlist</span>
+          </button>
+        </div>
+        <p class="waitlist-form__note" id="wlNote">We'll only use this to notify you when PathPilot opens at your campus.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1"/>
+            <path d="M16 7 L23 22 L16 18.5 L9 22 Z" fill="currentColor"/>
+          </svg>
+        </span>
+        PathPilot
+      </a>
+      <p>A student consultancy for research, career, and professional growth. Starting at Daffodil International University.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#experts">For Experts</a>
+      <a href="#trajectory">Our Trajectory</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@pathpilot.app">hello@pathpilot.app</a>
+      <a href="#waitlist">Join the waitlist</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>&copy; <span id="year"></span> PathPilot. Built by HM Production.</span>
+    <span>Dhaka, Bangladesh</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
